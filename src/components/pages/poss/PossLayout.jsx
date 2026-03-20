@@ -22,7 +22,7 @@ const PossLayout = ({ children }) => {
                 </div>
             </nav>
 
-            {children}
+            { children }
 
             {/* Footer */}
             <footer className="w-full py-12 bg-slate-50 dark:bg-slate-950">

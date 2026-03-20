@@ -8,13 +8,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home />}>
-          <Route path='poss' element={<PossLayout />} >
-            <Route index element={<Poss />} />
-            <Route path='billing' element={<Billing />} />
-          </Route>
-        </Route>
-        <Route path='*' element={<h2>not define</h2>} />
+        <Route path='/' element={<Home />}/>
+        <Route path='/Poss' element={<Poss />}/>
+        <Route path='/Poss/Billing' element={<Billing />}/>
+        <Route path='*' element={<h1>note found</h1>}/>
       </Routes>
     </BrowserRouter>
 
