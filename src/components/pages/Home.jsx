@@ -1,5 +1,6 @@
 import Header from '../header/Header.jsx'
 import Footer from '../footer/Footer.jsx'
+import { Outlet } from 'react-router-dom'
 const Home = () => {
     return (
         <div className="bg-background text-on-surface font-body">
@@ -149,6 +150,7 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
+                <Outlet />
             </main>
             <Footer />
         </div>
