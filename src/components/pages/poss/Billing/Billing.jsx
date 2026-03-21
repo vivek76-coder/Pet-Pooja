@@ -1,28 +1,8 @@
 import React from 'react';
-import Poss from '../Poss.jsx'
+import PossLayout from '../PossLayout.jsx'
 const Billing = () => {
     return (
-        <div className="bg-surface font-body text-on-surface antialiased">
-            {/* TopNavBar */}
-            <nav className="sticky top-0 z-50 glass-effect">
-                <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-                    <div className="flex items-center gap-12">
-                        <span className="font-headline font-extrabold text-2xl tracking-tighter text-primary">Petpooja</span>
-                        <div className="hidden md:flex items-center gap-8">
-                            <a className="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors" href="#">Features</a>
-                            <a className="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors" href="#">Inventory</a>
-                            <a className="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors" href="#">Online Ordering</a>
-                            <a className="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors" href="#">Reports</a>
-                            <a className="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors" href="#">Pricing</a>
-                        </div>
-                    </div>
-                    <div className="flex items-center gap-4">
-                        <button className="px-5 py-2 text-sm font-semibold text-primary hover:bg-surface-container transition-all">Login</button>
-                        <button className="hero-gradient px-6 py-2.5 text-sm font-bold text-on-primary rounded-md ambient-shadow">Book a Demo</button>
-                    </div>
-                </div>
-            </nav>
-
+        <PossLayout>
             <main>
                 {/* Hero Section */}
                 <section className="relative pt-24 pb-32 overflow-hidden">
@@ -225,57 +205,8 @@ const Billing = () => {
                     </div>
                 </section>
             </main>
+        </PossLayout>
 
-            {/* Footer */}
-            <footer className="bg-surface-container-low border-t border-outline-variant/10 pt-20 pb-10">
-                <div className="max-w-7xl mx-auto px-6">
-                    <div className="flex flex-col md:flex-row justify-between items-start mb-20 gap-12">
-                        <div className="max-w-xs">
-                            <span className="font-headline font-extrabold text-2xl tracking-tighter text-primary mb-6 block">Petpooja</span>
-                            <p className="text-sm text-on-surface-variant leading-relaxed">The most comprehensive restaurant management platform for businesses of all sizes.</p>
-                        </div>
-                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-12 flex-1 md:ml-20">
-                            <div>
-                                <p className="text-xs font-bold uppercase tracking-widest text-on-surface mb-6">Product</p>
-                                <ul className="space-y-4">
-                                    <li><a className="text-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Features</a></li>
-                                    <li><a className="text-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Inventory</a></li>
-                                    <li><a className="text-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Pricing</a></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <p className="text-xs font-bold uppercase tracking-widest text-on-surface mb-6">Company</p>
-                                <ul className="space-y-4">
-                                    <li><a className="text-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Contact Us</a></li>
-                                    <li><a className="text-sm text-on-surface-variant hover:text-primary transition-colors" href="#">About</a></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <p className="text-xs font-bold uppercase tracking-widest text-on-surface mb-6">Resources</p>
-                                <ul className="space-y-4">
-                                    <li><a className="text-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Resources</a></li>
-                                    <li><a className="text-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Integrations</a></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <p className="text-xs font-bold uppercase tracking-widest text-on-surface mb-6">Legal</p>
-                                <ul className="space-y-4">
-                                    <li><a className="text-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
-                                    <li><a className="text-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="pt-10 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-6">
-                        <p className="text-sm text-on-surface-variant">© 2024 Petpooja. All rights reserved.</p>
-                        <div className="flex gap-6">
-                            <a className="text-on-surface-variant hover:text-primary" href="#"><span className="material-symbols-outlined">language</span></a>
-                            <a className="text-on-surface-variant hover:text-primary" href="#"><span className="material-symbols-outlined">share</span></a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </div>
     );
 };
 
