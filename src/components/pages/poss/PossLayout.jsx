@@ -2,7 +2,7 @@ import React from 'react';
 
 const PossLayout = ({ children }) => {
     return (
-        <div className="bg-surface font-body text-on-surface antialiased">
+        <div className="bg-surface font-body text-on-surface antialiased min-h-screen">
             {/* TopNavBar */}
             <nav className="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-[0_20px_40px_rgba(0,74,198,0.06)]">
                 <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
@@ -22,7 +22,7 @@ const PossLayout = ({ children }) => {
                 </div>
             </nav>
 
-            { children }
+            {children}
 
             {/* Footer */}
             <footer className="w-full py-12 bg-slate-50 dark:bg-slate-950">
